@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }*
+  a,
+  a:visited{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover{
+    color: #1e9148c7;
+  }
+  img {
+    width: 400px;
+  }
+  
+  .ligne1{
+    display: flex;
+    margin-top: 2%;
+  }
+  .logo{
+    margin: 1%;
+    display: flex;
+    gap: 1%;
+  }
+  .logo img{
+   min-width: 10%;
+   max-width: 20%;
+  }
+  .logo h1{
+    margin-top: 10%;
+    font-size: 35px;
+    color: #274c5b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /**** NAVBAR ****/
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: calc(0.4rem + 0.5vw);
+    width: auto;
+    margin-left: 50%;
+
+  
+  }
+  nav ul {
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    gap: 35px;
+    font-weight: bold;
+  }
+  
+  #icons {
+    cursor: pointer;
+    display: none;
+  }
+  /* media query ligne1*/
+
+@media (max-width: 650px) {
+    #icons {
+      display: block;
+    padding: 30px 10px; 
+    border-radius: 30px; 
+    background-color: white;
+    border-color: darkgreen;  
+    }
+    #icons:before {
+      content: "\2630";
+    
+    }
+    
+    nav ul {
+      position: fixed;
+      left: -100%;
+      top: 5%;
+      flex-direction: column;
+      background: skyblue;
+      width: 100%;
+      text-align: center;
+      transition: 0.25s;
+    }
+    nav li {
+      padding: 3px 0;
+    }
+    nav li:hover {
+      background: rgb(157, 217, 240);
+    }
+  
+    }
+    
+    @media (min-width: 480px) {
+      img {
+          width: 100%;
+      }
+    }
+    .ligne2{
+        background-image: url(images/Image\ \(12\).png);
+        height: 898px;
+    }
+.ligne2 h2{
+    padding: 160px 0 0 0;
+    margin-left: 60%;
+   font-size: 300px;
+   color: #8FA8A8;
+}
+.ligne2 h1{
+    margin-top:-20px;
+    margin-left: 60%;
+    font-size: 70px;
+    color: #274C5B;
+ }
+ .ligne2 p{
+    margin-left: 60%;
+    font-size: 20px;
+ }
+ .bouton1{
+    padding : 15px 40px;
+    background-color:#1c1c37dd;
+    border-radius: 30px;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 20px;  
+    margin-left: 60%;
+}
+.bouton1 a{
+    color: white;
+}
+@media screen and (max-width: 768px) {
+    .ligne2 h2 {
+        font-size: 200px;
+        margin-left: 10%;
+    }
+
+    .ligne2 h1 {
+        font-size: 50px;
+        margin-left: 10%;
+    }
+
+    .ligne2 p,
+    .bouton1 {
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+}
+
+.ligne3{
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* Ajustement de l'espacement entre les éléments */
+    height: auto; /* Hauteur automatique pour s'adapter au contenu */
+    margin-top: 10px;
+    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+  }
+  
+  .D4 {
+    margin-top: 20px;
+  }
+  .D4 h2{
+    margin-bottom: 20px;
+  }
+  .log2 img {
+    width: 50px; /* Ajustement de la taille de l'image */
+    margin-bottom: 10px;
+  }
+  
+  .log2 h1 {
+    margin-top: 20px;
+  }
+  .end{
+    margin-bottom: 30px;
+  }
+  
+  h5 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .log2 {
+    display: flex;
+  }
+  
+  .logos {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .logos img {
+    margin-top: 40px;
+    width: 50px; /* Ajustement de la taille de l'image */
+  }
+ 
+
+/* Media Query pour les petits écrans */
+@media only screen and (max-width: 600px) {
+
+      .log2 img {
+        width: 30px; /* Réduire la taille de l'image */
+    }
+  
+    h5 {
+        font-size: small; 
+        margin-left: 0; 
+    }
+  
+    .logos img {
+        width: 30px; 
+    }
+
+    .ligne3 {
+        flex-direction: column; /* Affichage en colonne pour les éléments flexibles */
+        align-items: center; /* Centrer les éléments horizontalement */
+    }
+  }
+  
+  
+    /* Footer */
+    .endd{
+      padding: 10px;
+      text-align: center;
+      margin: 10px;
+    }
+    /* Media query pour les tablettes */
+  @media screen and (max-width: 768px) {
+    .endd {
+      font-size: 14px; /* Ajustement de la taille de la police pour les tablettes */
+      padding: 5px; /* Ajustement de l'espacement pour les tablettes */
+      margin: 5px; /* Ajustement de la marge pour les tablettes */
+    }
+  }
+  /* Media query pour les appareils mobiles */
+  @media screen and (max-width: 480px) {
+    .endd {
+      font-size: 12px; /* Ajustement de la taille de la police pour les appareils mobiles */
+      padding: 3px;
+
+    }
+  }
+    
